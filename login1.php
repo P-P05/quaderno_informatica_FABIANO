@@ -8,29 +8,29 @@
 <body>
 
 <?php
-// Credenziali predefinite
+
 $validUsername = "Giuseppe";
 $validPassword = "1312";
 
-// Se il form è stato inviato (POST)
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Recupera i dati inviati
+   
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Verifica le credenziali
+    
     if ($username == $validUsername && $password == $validPassword) {
-        echo "<h1>Benvenuto, $username!</h1>"; // Messaggio di successo
+        echo "<h1>Benvenuto, $username!</h1>"; 
     } else {
-        echo "<p style='color: red;'>Credenziali errate, riprova.</p>"; // Messaggio di errore
-        mostraForm(); // Riproponi il form
+        echo "<p style='color: red;'>Credenziali errate, riprova.</p>"; 
+        mostraForm(); 
     }
 } else {
-    // Mostra il form se la pagina è appena caricata
+    
     mostraForm();
 }
 
-// Funzione per mostrare il form di login
+
 function mostraForm() {
     echo '
     <form method="post" action="">
@@ -53,7 +53,7 @@ function mostraForm() {
 <html lang="it">
 <body>
     
-    <!-- Pulsante per tornare al sommario -->
+   
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
-// Verifica se il form è stato inviato e se c'è un valore per N
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['numero'])) {
-    $N = (int)$_POST['numero']; // Ottieni il valore N dal form
+    $N = (int)$_POST['numero']; 
 } else {
-    $N = null; // Se non è stato inviato il form, N sarà nullo
+    $N = null; 
 }
 ?>
 
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['numero'])) {
 </head>
 <body>
     <?php if ($N === null): ?>
-        <!-- Form per inserire il numero N -->
+       
         <form method="POST" action="">
             <label for="numero">Scegli un numero da 1 a 10:</label>
             <select name="numero" id="numero">
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['numero'])) {
             <button type="submit">Crea tabella</button>
         </form>
     <?php else: ?>
-        <!-- Tabella dei quadrati e cubi -->
+        
         <h2>Tabella dei Quadrati e Cubi (da 1 a <?= $N ?>)</h2>
         <table border="1">
             <tr>
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['numero'])) {
 </head>
 <body>
     
-    <!-- Pulsante per tornare al sommario -->
+    
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 </body>
 </html>

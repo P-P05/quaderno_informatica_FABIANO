@@ -1,8 +1,8 @@
 <?php
-// Variabile per il nome
+
 $nome = "Paolo";
 
-// Determinazione del saluto in base all'ora
+
 $ora = date("H");
 if ($ora >= 8 && $ora < 12) {
     $saluto = "Buongiorno";
@@ -12,10 +12,10 @@ if ($ora >= 8 && $ora < 12) {
     $saluto = "Buonanotte";
 }
 
-// Rilevamento del browser
+
 $browser = $_SERVER['HTTP_USER_AGENT'];
 
-// Mostra il contenuto della pagina
+
 echo "<p>$saluto $nome, benvenuta nella mia prima pagina PHP!</p>";
 echo "<p>Stai usando il browser: $browser</p>";
 ?>
@@ -24,7 +24,7 @@ echo "<p>Stai usando il browser: $browser</p>";
 
    
     
-    <!-- Pulsante per tornare al sommario -->
+    
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 
 </html>

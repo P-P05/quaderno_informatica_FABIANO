@@ -29,6 +29,6 @@
     <title>Progetto 1</title>
 </head>
     
-    <!-- Pulsante per tornare al sommario -->
+   
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 </html>

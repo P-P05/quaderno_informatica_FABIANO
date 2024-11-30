@@ -12,9 +12,9 @@
 </head>
 <body>
 <?php
-$n = 10; // Altezza dei triangoli
+$n = 10; 
 
-// Triangolo (a)
+
 for ($i = 1; $i <= $n; $i++) {
     for ($j = 1; $j <= $i; $j++) {
         echo '*';
@@ -23,7 +23,7 @@ for ($i = 1; $i <= $n; $i++) {
 }
 echo '<br>';
 
-// Triangolo (b)
+
 for ($i = $n; $i >= 1; $i--) {
     for ($j = 1; $j <= $i; $j++) {
         echo '*';
@@ -32,7 +32,7 @@ for ($i = $n; $i >= 1; $i--) {
 }
 echo '<br>';
 
-// Triangolo (c)
+
 for ($i = $n; $i >= 1; $i--) {
     for ($j = 1; $j <= ($n - $i); $j++) {
         echo '&nbsp;';
@@ -44,7 +44,6 @@ for ($i = $n; $i >= 1; $i--) {
 }
 echo '<br>';
 
-// Triangolo (d)
 for ($i = 1; $i <= $n; $i++) {
     for ($j = 1; $j <= ($n - $i); $j++) {
         echo '&nbsp;';
@@ -62,7 +61,7 @@ for ($i = 1; $i <= $n; $i++) {
 
    
     
-    <!-- Pulsante per tornare al sommario -->
+   
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 
 </html>

@@ -10,7 +10,7 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Raccolta dei dati dal modulo
+       
         $nome = $_POST['nome'];
         $cognome = $_POST['cognome'];
         $data_nascita = $_POST['data_nascita'];
@@ -18,10 +18,10 @@
         $email = $_POST['email'];
         $cellulare = $_POST['cellulare'];
 
-        // Preparazione del formato per la registrazione
+       
         $registrazione = "$nome,$cognome,$data_nascita,$codice_fiscale,$email,$cellulare\n";
 
-        // Salvataggio dei dati nel file registrazioni.txt
+        
         $file = "registrazioni.txt";
         if (file_put_contents($file, $registrazione, FILE_APPEND | LOCK_EX)) {
             echo "<p>Registrazione avvenuta con successo!</p>";
@@ -59,7 +59,7 @@
 
    
     
-    <!-- Pulsante per tornare al sommario -->
+  
     <button onclick="location.href='index.html'">Torna al Sommario</button>
 
 </html>
