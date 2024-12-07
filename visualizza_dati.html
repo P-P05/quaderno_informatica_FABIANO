@@ -7,38 +7,56 @@
 </head>
 <body>
     <h1>Gestione Anagrafica Utenti</h1>
+
+    <!-- Form per raccogliere i dati dell'utente -->
     <form action="visualizza_dati.php" method="post">
+        
+        <!-- Campo per il nome -->
         <label>Nome:</label>
         <input type="text" name="nome" required><br><br>
 
+        <!-- Campo per il cognome -->
         <label>Cognome:</label>
         <input type="text" name="cognome" required><br><br>
 
+        <!-- Campo per la data di nascita -->
         <label>Data di nascita:</label>
         <input type="date" name="data_nascita" required><br><br>
 
+        <!-- Campo per l'email -->
         <label>Email:</label>
         <input type="email" name="email" required><br><br>
 
+        <!-- Campo per l'indirizzo via/piazza -->
         <label>Via/Piazza:</label>
         <input type="text" name="indirizzo_via" required><br><br>
 
+        <!-- Campo per il CAP -->
         <label>CAP:</label>
         <input type="text" name="indirizzo_cap" required><br><br>
 
+        <!-- Campo per il comune -->
         <label>Comune:</label>
         <input type="text" name="indirizzo_comune" required><br><br>
 
+        <!-- Campo per la provincia -->
         <label>Provincia:</label>
         <input type="text" name="indirizzo_provincia" required><br><br>
 
+        <!-- Campo per il nickname -->
         <label>Nickname:</label>
         <input type="text" name="nickname" required><br><br>
 
+        <!-- Campo per la password -->
         <label>Password:</label>
         <input type="password" name="password" required minlength="8"><br><br>
 
+        <!-- Bottone per inviare il modulo -->
         <button type="submit">Invia</button>
     </form>
+
+    <!-- Pulsante per tornare al Sommario -->
+    <button onclick="location.href='index.html'">Torna al Sommario</button>
 </body>
 </html>
+
